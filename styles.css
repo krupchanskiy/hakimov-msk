@@ -102,7 +102,7 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.02;letter-spa
 .hero__inner{position:relative;z-index:3;padding-top:clamp(84px,7.5vh,92px);padding-bottom:50px}
 .hero__date{margin:20px 0 28px;display:flex;width:fit-content;white-space:nowrap;align-items:center;gap:12px;font-size:clamp(21px,2.1vw,30px);letter-spacing:.02em;color:var(--gold-2)}
 .hero__date b{font-weight:600}
-.hero h1{font-size:clamp(76px,14vw,224px);line-height:.62;letter-spacing:-.02em;font-weight:600;margin-top:clamp(12px,2.4vw,30px)}
+.hero h1{font-size:clamp(76px,14vw,224px);line-height:.62;letter-spacing:-.02em;font-weight:600;margin-top:clamp(28px,4.2vw,64px)}
 .hero h1 em{display:block;font-style:italic;font-weight:500;color:var(--gold-2)}
 .hero__lead{max-width:580px;margin:30px 0 38px;font-size:clamp(18px,1.5vw,21px);color:var(--muted-dark);line-height:1.55}
 .hero__actions{display:flex;align-items:center;gap:26px;flex-wrap:wrap}
