@@ -28,33 +28,12 @@
   <meta name="twitter:description" content="Вечер внутренней ясности и спокойствия с Александром Хакимовым в Москве." />
   <meta name="twitter:image" content="https://hakimov.moscow/images/hakimov.png" />
 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css" />
-  <!-- Critical CSS inlined for first paint -->
-  <style>
-    :root {
-      --bg: #0b1226;
-      --bg-2: #121d3d;
-      --petrol: #3d5680;
-      --card: rgba(255, 255, 255, .045);
-      --card-2: rgba(255, 255, 255, .07);
-      --line: rgba(120, 140, 190, .34);
-      --line-soft: rgba(255, 255, 255, .11);
-      --text: #f4efe3;
-      --muted: rgba(244, 239, 227, .73);
-      --muted-2: rgba(244, 239, 227, .55);
-      --gold: #eaa62a;
-      --gold-2: #ffcb5c;
-      --black: #0b1226;
-      --radius: 20px;
-      --shadow: 0 26px 70px rgba(0,0,0,.36);
-      --container: 1200px;
-    }
-    html { scroll-behavior: smooth; }
-    body { min-width: 320px; background: var(--bg); color: var(--text); font-family: Arial, Helvetica, sans-serif; overflow-x: hidden; }
-    img { max-width: 100%; display: block; }
-    a { color: inherit; }
-    .container { width: min(var(--container), calc(100% - 48px)); margin: 0 auto; }
-</style>
 
   <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
@@ -94,410 +73,281 @@
     ]
   }
   </script>
-
-  <!-- Yandex.Metrika counter -->
-  <script type="text/javascript">
-    (function(m,e,t,r,i,k,a){
-        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();
-        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=109179181', 'ym');
-
-    ym(109179181, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
-  </script>
-  <noscript><div><img src="https://mc.yandex.ru/watch/109179181" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-  <!-- /Yandex.Metrika counter -->
 </head>
 <body>
-  <main>
-    <section class="hero" id="top">
-      <div class="hero__media" aria-hidden="true">
-        <img class="hero__bg" src="images/hero-bg.jpg" alt="" />
-        <img class="hero__person" src="images/hero-person.png" alt="Александр Хакимов" />
-      </div>
-      <div class="container hero__inner">
-        <header class="topbar">
 
-
-
-
-
-
-
-
-
-<div class="brand">
-  <span>
-    <b class="alex">Александр Хакимов</b><br>
-    в Москве
-  </span>
-</div>
-
-          <div class="top-benefits">
-            <div class="top-benefit"><svg class="icon" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg><span>Спокойствие<br>и внутренний баланс</span></div>
-            <div class="top-benefit"><svg class="icon" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><span>Живое общение<br>и ответы на вопросы</span></div>
-            <div class="top-benefit"><svg class="icon" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg><span>Мантры, музыка<br>и вдохновение</span></div>
-          </div>
-        </header>
-
-        <div class="hero__content">
-          <div class="badge date-badge">18 августа • 18:00 • Москва</div>
-
-
-
-
-
-
-
-
-
-
-          <h1 class="hero-main-title">
-            <span>Йога</span>
-            жизни
-          </h1>
-
-          <p class="hero__lead hero__lead--wide">
-            Семинар Александра Хакимова о том, как понимать себя, строить настоящие отношения и сохранять внутренний баланс. Один особенный вечер в Москве.
-          </p>
-
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="#events">Узнать больше</a>
-            <a class="btn btn--ghost" href="#events">Смотреть программу</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="benefit-strip">
-      <div class="container benefit-grid">
-        <div class="benefit-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 21c-4-2.2-6.5-5.4-7.4-9.6 3.6.3 6.1 2 7.4 5.1 1.3-3.1 3.8-4.8 7.4-5.1-.9 4.2-3.4 7.4-7.4 9.6Z"/></svg><div><h3>Расслабление</h3><p>Снизьте внутреннее напряжение и почувствуйте спокойствие.</p></div></div>
-        <div class="benefit-item"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 1 1 5.8 1c0 2-3 2-3 4"/><path d="M12 17h.01"/></svg><div><h3>Ответы на вопросы</h3><p>Получите ясность и понимание в сложных ситуациях.</p></div></div>
-        <div class="benefit-item"><svg class="icon" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg><div><h3>Атмосфера</h3><p>Проведите вечер в кругу искренних и открытых людей.</p></div></div>
-        <div class="benefit-item"><svg class="icon" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg><div><h3>Живой звук</h3><p>Музыка, мантры и лекция наполнят энергией и вдохновением.</p></div></div>
-      </div>
-    </section>
-
-
-
-    <section class="section experience-section" id="events">
-      <div class="container container--narrow">
-        <h2 class="section-title">Семинар «Йога жизни»</h2>
-        <p class="section-subtitle">
-Александр Хакимов более 40 лет практикует мантра-медитацию и проводит встречи, которые помогают людям обрести внутреннюю ясность, спокойствие и ответы на важные вопросы.</p>
-
-
-
-        <div class="experience-stack">
-
-          <article class="experience-card">
-            <div class="experience-card__media">
-              <img src="images/card1.webp" alt="Александр Хакимов проводит семинар" loading="lazy" />
-            </div>
-
-            <div class="experience-card__content">
-              <span class="badge experience-card__label">18 августа • 18:00</span>
-              <h3>Йога жизни<span>Понять себя и обрести опору</span></h3>
-              <p class="experience-card__lead">Более 35 лет Александр Хакимов проводит лекции и семинары по всему миру, помогая людям находить внутреннюю опору, ясность и ответы на важные вопросы. Эта встреча — о том, как понимать себя, строить настоящие отношения и сохранять внутренний баланс.</p>
-              <ul class="experience-points">
-                <li><svg class="icon" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg><span>Отношения, любовь и понимание себя</span></li>
-                <li><svg class="icon" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg><span>Внутренняя опора в сложные периоды</span></li>
-                <li><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 1 1 5.8 1c0 2-3 2-3 4"/></svg><span>Живые ответы на вопросы, которые волнуют</span></li>
-                <li><svg class="icon" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg><span>Атмосфера доверия, смысла и живого общения</span></li>
-              </ul>
-              <!-- TODO: заменить # на ссылку покупки билетов -->
-              <a class="btn btn--primary" href="#" target="_blank" rel="noopener">Купить билет</a>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <h2 class="section-title dop">Почему люди приходят на встречи к Александру Хакимову</h2>
-        <div class="why-grid">
-          <div class="why-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 21c-4-2.2-6.5-5.4-7.4-9.6 3.6.3 6.1 2 7.4 5.1 1.3-3.1 3.8-4.8 7.4-5.1-.9 4.2-3.4 7.4-7.4 9.6Z"/></svg><p>Получить внутреннюю ясность</p></div>
-          <div class="why-item"><svg class="icon" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg><p>Разобраться в отношениях</p></div>
-          <div class="why-item"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 1 1 5.8 1c0 2-3 2-3 4"/></svg><p>Найти ответы на сложные вопросы</p></div>
-          <div class="why-item"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/></svg><p>Почувствовать вдохновение и опору</p></div>
-          <div class="why-item"><svg class="icon" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg><p>Провести время в атмосфере живого общения</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <h2 class="section-title">Атмосфера прошлых встреч</h2>
-        <div class="photo-row">
-          <img src="images/gallery-1.webp" alt="Фото мероприятия 1" loading="lazy" />
-          <img src="images/gallery-2.webp" alt="Фото мероприятия 2" loading="lazy" />
-          <img src="images/gallery-3.webp" alt="Фото мероприятия 3" loading="lazy" />
-          <img src="images/gallery-4.webp" alt="Фото мероприятия 4" loading="lazy" />
-          <img src="images/gallery-5.webp" alt="Фото мероприятия 5" loading="lazy" />
-          <img src="images/gallery-6.webp" alt="Фото мероприятия 6" loading="lazy" />
-        </div>
-
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <h2 class="section-title">Видео с лекций</h2>
-        <div class="video-grid" id="video-grid">
-          <div class="video-card" data-src="https://rutube.ru/play/embed/c37b8b8262df4065862bb32a28f9f34b/?skinColor=000000" data-embed="1"><div class="video-card__thumb">
-            <img src="images/video/thumb1.webp" alt="О смысле жизни и предназначении" loading="lazy" />
-            <span class="play">▶</span></div><p>О смысле жизни и предназначении</p></div>
-          <div class="video-card" data-src="https://rutube.ru/play/embed/4a441264e34bd7b2126e0b5567611962/?skinColor=000000" data-embed="1"><div class="video-card__thumb">
-            <img src="images/video/thumb2.webp" alt="Как обрести внутреннюю опору" loading="lazy" />
-            <span class="play">▶</span></div><p>Как обрести внутреннюю опору</p></div>
-          <div class="video-card" data-src="https://rutube.ru/play/embed/ff895134b30916e9760fa20a554e33db/?skinColor=000000" data-embed="1"><div class="video-card__thumb">
-            <img src="images/video/thumb3.webp" alt="Настоящие отношения начинаются с понимания себя" loading="lazy" />
-            <span class="play">▶</span></div><p>Настоящие отношения начинаются с понимания себя</p></div>
-          <div class="video-card" data-src="https://rutube.ru/play/embed/045eee5f403542686835abe98c9436ce/" data-embed="1"><div class="video-card__thumb">
-            <img src="images/video/thumb4.webp" alt="Что даёт нам мантра-медитация" loading="lazy" />
-            <span class="play">▶</span></div><p>Что даёт нам мантра-медитация</p></div>
-        </div>
-   
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container author-books">
-
-
-        <div class="author-editorial" id="author">
-          <div class="author-editorial__top">
-            <div class="author-editorial__media">
-              <div class="author-editorial__portrait">
-                <img src="images/author.webp" alt="Александр Хакимов" loading="lazy" />
-              </div>
-            </div>
-
-            <div class="author-editorial__content">
-              <div>
-                <span class="badge author-editorial__label">Об авторе</span>
-                <h2>Александр Хакимов</h2>
-                <p class="author-editorial__lead">Писатель, психолог, философ, духовный учитель. Известен доступным изложением сложных философских тем и искренним вниманием к вопросам слушателей.</p>
-                <div class="author-editorial__note">
-                  <svg class="icon" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/></svg>
-                  После программы запланирована автограф-сессия
-                </div>
-              </div>
-
-              <div class="author-stats">
-                <div class="author-stat"><strong>35+</strong><span>лет практики и изучения ведической культуры</span></div>
-                <div class="author-stat"><strong>3000+</strong><span>лекций в 20+ странах мира</span></div>
-                <div class="author-stat"><strong>40+</strong><span>лет практики мантра-медитации</span></div>
-                <div class="author-stat"><strong>Автор</strong><span>книг о жизни, отношениях и духовном развитии</span></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="author-bookshelf">
-            <div class="author-bookshelf__head">
-              <h3>Книги автора</h3>
-              <p>Книги Александра Хакимова становились лидерами продаж на Московских книжных выставках-ярмарках и были отмечены премиями за вклад в культуру и духовное развитие.</p>
-            </div>
-
-            <div class="book-slider">
-              <div class="book"><img src="images/kniga1.webp" alt="Книга" loading="lazy" /><p>Древняя мудрость</p></div>
-              <div class="book"><img src="images/kniga2.webp" alt="Книга" loading="lazy" /><p>Возрождение души</p></div>
-              <div class="book"><img src="images/kniga3.webp" alt="Книга" loading="lazy" /><p>Законы судьбы</p></div>
-              <div class="book"><img src="images/kniga4.webp" alt="Книга" loading="lazy" /><p>Реинкарнация</p></div>
-              <div class="book"><img src="images/kniga5.webp" alt="Книга" loading="lazy" /><p>Эволюция сознания</p></div>
-              <div class="book"><img src="images/kniga6.webp" alt="Книга" loading="lazy" /><p>Иллюзия и реальность</p></div>
-              <div class="book"><img src="images/kniga7.webp" alt="Книга" loading="lazy" /><p>Священные места</p></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- <section class="section">
-      <div class="container trust-grid">
-        <div class="trust-item"><svg class="icon" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg><div><h3>Безопасная оплата</h3><p>Оплата на защищённой странице партнёрской кассы.</p></div></div>
-        <div class="trust-item"><svg class="icon" viewBox="0 0 24 24"><path d="M3 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2Z"/></svg><div><h3>Электронный билет</h3><p>Придёт на вашу почту сразу после оплаты.</p></div></div>
-        <div class="trust-item"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><div><h3>Быстро и удобно</h3><p>Покупка занимает всего пару минут.</p></div></div>
-        <div class="trust-item"><svg class="icon" viewBox="0 0 24 24"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3v5Z"/><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3v5Z"/></svg><div><h3>Поддержка кассы</h3><p>Техническая поддержка по всем вопросам.</p></div></div>
-      </div>
-    </section> -->
-
-<h2 class="section-title dopzag"> Приглашаем вас на семинар «Йога жизни»</h2>
-
-
-
-<section class="final-cta final-cta--cinematic">
-
-  <div class="container final-cta__inner">
-
-    <div class="final-cta__content">
-
-      
-
-      <h2>
-        <span>До встречи на семинаре
-        «Йога жизни»
-        <span class="cvet">Александра Хакимова</span>
-      </h2>
-
-      <p>
-        18 августа • Москва<br>
-        Семинар «Йога жизни»
-      </p>
-
+<!-- ===== NAV ===== -->
+<nav class="nav" id="nav">
+  <div class="wrap nav__row">
+    <a class="nav__brand" href="#top"><b>Александр Хакимов</b><span>в Москве</span></a>
+    <div class="nav__links" id="navlinks">
+      <a href="#evening">О вечере</a>
+      <a href="#program">Программа</a>
+      <a href="#author">Об авторе</a>
+      <a href="#venue">Место</a>
+      <a class="btn btn--primary nav__cta" href="#book">Забронировать</a>
     </div>
-
-    <div class="final-cta__actions">
-
-      <!-- TODO: заменить # на ссылку покупки билетов -->
-      <a class="btn btn--primary"
-         href="#"
-         target="_blank"
-         rel="noopener">
-        Купить билет
-      </a>
-
-    </div>
-
+    <button class="nav__burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
   </div>
+</nav>
 
-</section>
-
-
-
-
-<section class="section venues-gallery-section" id="venues-gallery">
-  <div class="container">
-    <h2 class="section-title">Пространство семинара</h2>
-    <p class="section-subtitle">
-      Посмотрите площадку, где пройдёт семинар. Так удобнее заранее почувствовать атмосферу и понять, куда вы приедете.
-    </p>
-
-    <div class="venues-gallery">
-      <figure class="venues-gallery__item">
-        <img src="images/venue-1.jpg" alt="Зрительный зал площадки в Москве" loading="lazy" />
-
-      </figure>
-
-
-
-
-
-
-          
-
-      <figure class="venues-gallery__item">
-        <img src="images/venue-2.jpg" alt="Зал со сцены — вид на зрительские места" loading="lazy" />
-     
-      </figure>
-
-      <figure class="venues-gallery__item">
-        <img src="images/venue-3.jpg" alt="Зал и сцена сбоку" loading="lazy" />
-   
-      </figure>
-
-      <figure class="venues-gallery__item">
-        <img src="images/venue-4.jpg" alt="Панорама зала" loading="lazy" />
-    
-      </figure>
+<main>
+<!-- ===== HERO ===== -->
+<section class="hero grain" id="top">
+  <div class="hero__bg"><img src="images/hero-bg-lib.png" alt="" /></div>
+  <img class="hero__person" src="images/hero-person-cut.png" alt="Александр Хакимов" />
+  <div class="wrap hero__inner">
+    <div class="hero__date"><b>18 августа</b> · 18:00 · Конгресс-центр</div>
+    <h1>Йога<em>жизни</em></h1>
+    <p class="hero__lead">Вечер с Александром Хакимовым — философом и художником — о том, как понимать себя, строить настоящие отношения и сохранять внутренний баланс.</p>
+    <div class="hero__actions">
+      <a class="btn btn--primary" href="#book">Забронировать место</a>
+      <a class="textlink" href="#program">Программа вечера <span class="ar">↓</span></a>
     </div>
+    <dl class="hero__meta">
+      <div><dt>Дата</dt><dd>18 августа</dd></div>
+      <div><dt>Начало</dt><dd>18:00</dd></div>
+      <div><dt>Город</dt><dd>Москва</dd></div>
+      <div><dt>Формат</dt><dd>Живая встреча</dd></div>
+    </dl>
   </div>
 </section>
 
-
-<section class="section contacts-section" id="contacts">
-  <div class="container container--contacts">
-    <div class="contacts-head">
-      <h2 class="section-title">Контакты и место проведения</h2>
-      <p class="section-subtitle">
-        Пожалуйста, проверьте адрес перед поездкой.
-      </p>
+<!-- ===== ABOUT THE EVENING ===== -->
+<section class="s s--paper2" id="evening">
+  <div class="wrap">
+    <div class="head-row reveal">
+      <div>
+        <span class="eyebrow" style="color:var(--terra)">О чём этот вечер</span>
+        <h2 style="margin-top:18px">Не лекция,<br>а разговор по существу</h2>
+      </div>
+      <p class="lead">Более 40 лет Александр Хакимов проводит встречи, после которых становится легче дышать. Без эзотерики и пафоса — простым языком о том, что касается каждого.</p>
     </div>
-
-    <div class="contacts-board contacts-board--single">
-
-      <article class="contacts-card contacts-venue contacts-venue--full">
-        <div class="contacts-venue__photo contacts-venue__photo--full">
-          <img src="images/final.webp" alt="Площадка семинара в Москве" loading="lazy" />
-        </div>
-
-        <div class="contacts-card__content">
-          <span class="contacts-card__date">18 августа • Семинар «Йога жизни»</span>
-          <div class="contacts-card__label">Место проведения</div>
-          <h3>Москва,<br>проспект Вернадского, 41, стр. 1</h3>
-          <p>
-            <strong>Конгресс-центр.</strong><br>
-            Ориентируйтесь на главный вход.
-          </p>
-
-          <div class="contacts-actions">
-            <a class="btn btn--ghost" href="https://yandex.ru/maps/?text=Москва%2C%20проспект%20Вернадского%2C%2041%2C%20стр.%201" target="_blank" rel="noopener">Открыть в Яндекс.Картах</a>
-          </div>
-        </div>
-      </article>
-
-    </div>
-
-    <!-- <div class="contacts-maps-row">
-
-
-      <div class="contacts-map contacts-map--small">
-        <div class="contacts-map__head">
-          <h3>Концерт мантра-медитация</h3>
-          <p>ул. Селезнёва, 46.</p>
-        </div>
-
-        <div class="contacts-map__frame">
-          <div class="contacts-map__placeholder">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A73018928f66bf3d6044289e61036a2237a0710197862139e856578ca3afd40fc&amp;source=constructor" width="606" height="490" frameborder="0"></iframe>
-          </div>
-        </div>
+    <div class="cols3">
+      <div class="col reveal" data-d="1">
+        <span class="col__num">01</span>
+        <h3>Понять себя</h3>
+        <p>Откуда берутся тревога и усталость, и как вернуть себе ясность и спокойствие в повседневной жизни.</p>
       </div>
-
-            <div class="contacts-map contacts-map--small">
-        <div class="contacts-map__head">
-          <h3>Лекция: Основа настоящих отношений</h3>
-          <p>Красный проспект, 15.</p>
-        </div>
-
-        <div class="contacts-map__frame">
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A944cd60a1be43805530cd7baceeafab3b660878519050d57beaabba23c9279c2&amp;source=constructor" allowfullscreen loading="lazy"></iframe>
-        </div>
+      <div class="col reveal" data-d="2">
+        <span class="col__num">02</span>
+        <h3>Настоящие отношения</h3>
+        <p>О любви, близости и уважении — что делает связь между людьми живой, а не удобной.</p>
       </div>
-
-    </div> -->
-
-    <div class="contacts-organizer-card">
-      <div class="contacts-organizer-card__avatar">
-        <img src="images/organizer.webp" alt="Ольга Орешкова — организатор" loading="lazy" />
-      </div>
-
-      <div class="contacts-organizer-card__content">
-        <div class="contacts-card__label">Организатор</div>
-        <div class="contacts-organizer-card__top">
-          <h3>Ольга Орешкова</h3>
-          <a href="tel:+79688099092">+7 968 809 9092</a>
-        </div>
-        <p>По вопросам участия, покупки билетов и организационной информации.</p>
+      <div class="col reveal" data-d="3">
+        <span class="col__num">03</span>
+        <h3>Внутренняя опора</h3>
+        <p>Где искать устойчивость, когда всё вокруг меняется, и как сохранять баланс в любые периоды.</p>
       </div>
     </div>
   </div>
 </section>
 
-  </main>
-  <script>
-    document.querySelectorAll('.video-card[data-src]').forEach(function(card) {
-      card.addEventListener('click', function() {
-        var src = this.getAttribute('data-src');
-        var thumb = this.querySelector('.video-card__thumb');
-        if (!src || !thumb) return;
-        this.classList.add('video-card--active');
-        thumb.innerHTML = '<iframe src="' + src + '" style="border:none;width:100%;height:100%;" allow="clipboard-write;" allowFullScreen loading="lazy"></iframe>';
-      });
-    });
-  </script>
+<!-- ===== PROGRAM ===== -->
+<section class="s s--dark grain" id="program">
+  <div class="wrap">
+    <div class="head-row reveal">
+      <div>
+        <span class="eyebrow eyebrow--gold">Программа вечера</span>
+        <h2 style="margin-top:18px">Как пройдёт<br>18 августа</h2>
+      </div>
+      <p class="lead">Идеальный вечер: мудрость жизни, ответы на актуальные вопросы, живая духовная музыка. Приходите за 30 минут — будет время настроиться.</p>
+    </div>
+    <div class="timeline">
+      <div class="tl reveal"><div class="tl__time">18:00</div><div class="tl__body"><h3>Сбор гостей</h3><p>Встреча, регистрация и спокойное начало вечера. Можно занять удобные места.</p></div></div>
+      <div class="tl reveal"><div class="tl__time">18:30</div><div class="tl__body"><h3>Лекция «Йога жизни»</h3><p>Главная часть вечера — о понимании себя, отношениях и внутренней опоре.</p><span class="tl__tag">~90 минут</span></div></div>
+      <div class="tl reveal"><div class="tl__time">20:00</div><div class="tl__body"><h3>Ответы на вопросы</h3><p>Живой диалог с залом. Можно задать то, что волнует именно вас.</p></div></div>
+      <div class="tl reveal"><div class="tl__time">20:40</div><div class="tl__body"><h3>Мантра-концерт</h3><p>Живая музыка и мантры — момент, ради которого многие и приходят.</p><span class="tl__tag">Живой звук</span></div></div>
+      <div class="tl reveal"><div class="tl__time">21:20</div><div class="tl__body"><h3>Автограф-сессия</h3><p>Возможность подойти, поблагодарить и подписать книгу автора.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AUTHOR ===== -->
+<section class="s s--paper" id="author">
+  <div class="wrap author">
+    <div class="author__photo reveal">
+      <img src="images/author.webp" alt="Александр Хакимов" />
+      <span class="cap">философ и художник</span>
+    </div>
+    <div class="reveal" data-d="1">
+      <span class="eyebrow" style="color:var(--terra)">Об авторе</span>
+      <h2>Александр<br>Хакимов</h2>
+      <p class="author__lead">Писатель, философ, психолог и художник. Более 35 лет путешествует по миру, объясняя сложное простым и человеческим языком.</p>
+      <p class="body">По образованию — художник: окончил художественное училище, автор арт-альбома «Эволюция красоты». Возможно, поэтому о философии он говорит так, как пишут картину — образно, тепло и без лишних слов.</p>
+      <p class="body">Его лекции собирают переполненные залы и миллионы просмотров. После встреч люди говорят об одном — жить становится спокойнее, появляется цель и смысл.</p>
+      <div class="author__stats">
+        <div><strong>15+</strong><span>изданных книг</span></div>
+        <div><strong>1000+</strong><span>семинаров проведено</span></div>
+        <div><strong>17</strong><span>стран мира</span></div>
+        <div><strong>35+</strong><span>лет лекций и практики</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BOOKS ===== -->
+<section class="s s--ink2 grain">
+  <div class="wrap">
+    <div class="books-head reveal">
+      <div>
+        <span class="eyebrow eyebrow--gold">Библиотека</span>
+        <h2 style="margin-top:16px">Книги<br>Александра Хакимова</h2>
+      </div>
+      <p>Книги Александра Хакимова становились лидерами продаж на книжных ярмарках и были отмечены премиями за вклад в культуру.</p>
+    </div>
+    <div class="book-rail reveal">
+      <div class="book"><img src="images/kniga1.webp" alt="" loading="lazy" /><p>Бхагавад-гита</p></div>
+      <div class="book"><img src="images/kniga2.webp" alt="" loading="lazy" /><p>Возрождение души</p></div>
+      <div class="book"><img src="images/kniga3.webp" alt="" loading="lazy" /><p>Карма</p></div>
+      <div class="book"><img src="images/kniga4.webp" alt="" loading="lazy" /><p>Реинкарнация</p></div>
+      <div class="book"><img src="images/kniga5.webp" alt="" loading="lazy" /><p>Эволюция сознания</p></div>
+      <div class="book"><img src="images/kniga6.webp" alt="" loading="lazy" /><p>Иллюзия и реальность</p></div>
+      <div class="book"><img src="images/kniga7.webp" alt="" loading="lazy" /><p>Священные места</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VOICES (placeholder testimonials — заменить на реальные) ===== -->
+<section class="s s--paper2">
+  <div class="wrap">
+    <div class="head-row reveal">
+      <div><span class="eyebrow" style="color:var(--terra)">Голоса участников</span>
+      <h2 style="margin-top:16px">После встречи</h2></div>
+      <p class="lead">Несколько голосов с прошлых встреч.</p>
+    </div>
+    <div class="voices">
+      <div class="voice reveal" data-d="1"><span class="qm">“</span><p>Ушла с ощущением, что внутри стало тихо. Простые слова, а попадают точно в то, что болит.</p><div class="who"><div><b>Марина</b><br><span>Москва</span></div></div></div>
+      <div class="voice reveal" data-d="2"><span class="qm">“</span><p>Думал, будет эзотерика. А получился честный разговор о жизни и отношениях. Пришёл с женой — не пожалели.</p><div class="who"><div><b>Дмитрий</b><br><span>Подольск</span></div></div></div>
+      <div class="voice reveal" data-d="3"><span class="qm">“</span><p>Мантра-концерт в конце — отдельное переживание. Давно так не отдыхала душой за один вечер.</p><div class="who"><div><b>Елена</b><br><span>Москва</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ATMOSPHERE ===== -->
+<section class="s s--dark grain">
+  <div class="wrap">
+    <div class="head-row reveal">
+      <div><span class="eyebrow eyebrow--gold">Атмосфера прошлых встреч</span>
+      <h2 style="margin-top:16px">Как это бывает</h2></div>
+    </div>
+    <div class="collage reveal">
+      <figure class="big"><img src="images/gallery-1.webp" alt="" loading="lazy" /></figure>
+      <figure><img src="images/gallery-2.webp" alt="" loading="lazy" /></figure>
+      <figure><img src="images/gallery-3.webp" alt="" loading="lazy" /></figure>
+      <figure class="wide"><img src="images/gallery-4.webp" alt="" loading="lazy" /></figure>
+      <figure class="tall"><img src="images/mantra/mantra2.webp" alt="" loading="lazy" /></figure>
+      <figure><img src="images/gallery-5.webp" alt="" loading="lazy" /></figure>
+      <figure><img src="images/gallery-6.webp" alt="" loading="lazy" /></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VIDEO ===== -->
+<section class="s s--ink2 grain">
+  <div class="wrap">
+    <div class="head-row reveal">
+      <div><span class="eyebrow eyebrow--gold">Видео с лекций</span>
+      <h2 style="margin-top:16px">Услышать заранее</h2></div>
+      <p class="lead">Несколько коротких фрагментов, чтобы понять и почувствовать зачем приходить.</p>
+    </div>
+    <div class="video-grid">
+      <div class="vcard reveal" data-d="1" data-src="https://rutube.ru/play/embed/c37b8b8262df4065862bb32a28f9f34b/?skinColor=000000"><div class="vthumb"><img src="images/video/thumb1.webp" alt="" loading="lazy" /><span class="play">▶</span></div><p>О смысле жизни и предназначении</p></div>
+      <div class="vcard reveal" data-d="2" data-src="https://rutube.ru/play/embed/4a441264e34bd7b2126e0b5567611962/?skinColor=000000"><div class="vthumb"><img src="images/video/thumb2.webp" alt="" loading="lazy" /><span class="play">▶</span></div><p>Как обрести внутреннюю опору</p></div>
+      <div class="vcard reveal" data-d="3" data-src="https://rutube.ru/play/embed/ff895134b30916e9760fa20a554e33db/?skinColor=000000"><div class="vthumb"><img src="images/video/thumb3.webp" alt="" loading="lazy" /><span class="play">▶</span></div><p>Отношения начинаются с понимания себя</p></div>
+      <div class="vcard reveal" data-src="https://rutube.ru/play/embed/045eee5f403542686835abe98c9436ce/"><div class="vthumb"><img src="images/video/thumb4.webp" alt="" loading="lazy" /><span class="play">▶</span></div><p>Что даёт нам мантра-медитация</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VENUE / CONTACTS ===== -->
+<section class="s s--paper" id="venue">
+  <div class="wrap">
+    <div class="head-row reveal">
+      <div><span class="eyebrow" style="color:var(--terra)">Место и как добраться</span>
+      <h2 style="margin-top:16px">Где встречаемся</h2></div>
+      <p class="lead">Проверьте адрес перед поездкой. Площадка — просторный конгресс-центр в Москве.</p>
+    </div>
+    <div class="venue reveal">
+      <div class="venue__photo"><img src="images/venue-1.jpg" alt="Площадка семинара" loading="lazy" /></div>
+      <div class="venue__info">
+        <span class="lbl">18 августа · Семинар «Йога жизни»</span>
+        <h3>Москва, проспект Вернадского, 41, стр. 1</h3>
+        <p><strong style="color:var(--cream)">Конгресс-центр.</strong> Ориентируйтесь на главный вход.</p>
+        <p>Удобная транспортная доступность, парковка рядом.</p>
+        <a class="btn btn--outline-light" href="https://yandex.ru/maps/?text=Москва, проспект Вернадского, 41, стр. 1" target="_blank" rel="noopener">Открыть в Яндекс.Картах</a>
+      </div>
+    </div>
+    <div class="organizer reveal">
+      <img src="images/organizer.webp" alt="Ольга Орешкова" loading="lazy" />
+      <div>
+        <div class="lbl">Организатор</div>
+        <h4>Ольга Орешкова</h4>
+        <p>По вопросам участия, билетов и организации.</p>
+        <div class="org-contacts">
+          <a class="org-chip" href="tel:+79688099092"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+7 968 809 9092</a>
+          <a class="org-chip org-chip--wa" href="https://wa.me/79688099092" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.77.46 3.45 1.27 4.91L2 22l5.25-1.38A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.6 0-3.1-.42-4.4-1.16l-.32-.19-3.12.82.83-3.04-.2-.33A7.93 7.93 0 0 1 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8zm4.5-5.6c-.25-.13-1.47-.72-1.7-.8-.23-.09-.4-.13-.56.12-.17.25-.64.8-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></svg>WhatsApp</a>
+          <a class="org-chip org-chip--tg" href="https://t.me/+79688099092" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.94 4.5 18.7 19.78c-.24 1.08-.88 1.35-1.78.84l-4.93-3.63-2.38 2.29c-.26.26-.48.48-.99.48l.35-5.02 9.13-8.25c.4-.35-.09-.55-.62-.2L6.42 13.1l-4.86-1.52c-1.06-.33-1.08-1.06.22-1.57L20.57 2.9c.88-.33 1.65.2 1.37 1.6z"/></svg>Telegram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="s final grain" id="book">
+  <div class="wrap reveal">
+    <span class="eyebrow eyebrow--gold">До встречи осталось</span>
+    <div class="count" id="count">
+      <div><b data-c="d">—</b><span>дней</span></div>
+      <div><b data-c="h">—</b><span>часов</span></div>
+      <div><b data-c="m">—</b><span>минут</span></div>
+    </div>
+    <h2>Йога <em>жизни</em></h2>
+    <p class="final__sub">18 августа · 18:00 · Москва, проспект Вернадского, 41</p>
+    <a class="btn btn--primary" href="#" target="_blank" rel="noopener" style="min-height:64px;padding:0 48px">Забронировать место</a>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>© Александр Хакимов · Семинар «Йога жизни» · Москва, 18 августа</span>
+    <span>Организатор: Ольга Орешкова · +7 968 809 9092</span>
+  </div>
+</footer>
+
+<script>
+// nav scroll state + mobile menu
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>40),{passive:true});
+document.getElementById('burger').addEventListener('click',()=>nav.classList.toggle('open'));
+document.getElementById('navlinks').addEventListener('click',e=>{if(e.target.tagName==='A')nav.classList.remove('open');});
+
+// reveal on scroll
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// video lazy embed
+document.querySelectorAll('.vcard[data-src]').forEach(c=>{
+  c.addEventListener('click',()=>{
+    const t=c.querySelector('.vthumb');
+    t.innerHTML='<iframe src="'+c.getAttribute('data-src')+'" allow="clipboard-write; autoplay" allowfullscreen loading="lazy"></iframe>';
+  });
+});
+
+// countdown
+const target=new Date('2026-08-18T18:00:00+03:00').getTime();
+function tick(){
+  const diff=target-Date.now();
+  const wrap=document.getElementById('count');
+  if(diff<=0){wrap.innerHTML='<div><b>Сегодня</b><span>встречаемся</span></div>';return;}
+  const d=Math.floor(diff/864e5),h=Math.floor(diff%864e5/36e5),m=Math.floor(diff%36e5/6e4);
+  wrap.querySelector('[data-c=d]').textContent=d;
+  wrap.querySelector('[data-c=h]').textContent=h;
+  wrap.querySelector('[data-c=m]').textContent=m;
+}
+tick();setInterval(tick,30000);
+</script>
 </body>
 </html>
