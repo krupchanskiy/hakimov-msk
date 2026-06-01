@@ -196,14 +196,22 @@
       </div>
       <p>Книги Александра Хакимова становились лидерами продаж на книжных ярмарках и были отмечены премиями за вклад в культуру.</p>
     </div>
-    <div class="book-rail reveal">
-      <div class="book"><img src="images/kniga1.webp" alt="" loading="lazy" /><p>Бхагавад-гита</p></div>
-      <div class="book"><img src="images/kniga2.webp" alt="" loading="lazy" /><p>Возрождение души</p></div>
-      <div class="book"><img src="images/kniga3.webp" alt="" loading="lazy" /><p>Карма</p></div>
-      <div class="book"><img src="images/kniga4.webp" alt="" loading="lazy" /><p>Реинкарнация</p></div>
-      <div class="book"><img src="images/kniga5.webp" alt="" loading="lazy" /><p>Эволюция сознания</p></div>
-      <div class="book"><img src="images/kniga6.webp" alt="" loading="lazy" /><p>Иллюзия и реальность</p></div>
-      <div class="book"><img src="images/kniga7.webp" alt="" loading="lazy" /><p>Священные места</p></div>
+    <div class="book-rail-wrap reveal">
+      <div class="book-rail" id="bookRail">
+        <div class="book"><img src="images/kniga1.webp" alt="" loading="lazy" /><p>Бхагавад-гита</p></div>
+        <div class="book"><img src="images/kniga2.webp" alt="" loading="lazy" /><p>Возрождение души</p></div>
+        <div class="book"><img src="images/kniga3.webp" alt="" loading="lazy" /><p>Карма</p></div>
+        <div class="book"><img src="images/kniga4.webp" alt="" loading="lazy" /><p>Реинкарнация</p></div>
+        <div class="book"><img src="images/kniga5.webp" alt="" loading="lazy" /><p>Эволюция сознания</p></div>
+        <div class="book"><img src="images/kniga6.webp" alt="" loading="lazy" /><p>Иллюзия и реальность</p></div>
+        <div class="book"><img src="images/kniga7.webp" alt="" loading="lazy" /><p>Священные места</p></div>
+      </div>
+      <button class="book-nav book-nav--prev" id="bookPrev" aria-label="Предыдущие книги">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <button class="book-nav book-nav--next" id="bookNext" aria-label="Листать книги">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+      </button>
     </div>
   </div>
 </section>
@@ -327,6 +335,26 @@ document.getElementById('navlinks').addEventListener('click',e=>{if(e.target.tag
 // reveal on scroll
 const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.15});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// book rail scroll arrows
+(()=>{
+  const rail=document.getElementById('bookRail');if(!rail)return;
+  const wrap=rail.closest('.book-rail-wrap'),prev=document.getElementById('bookPrev'),next=document.getElementById('bookNext');
+  const step=()=>{const b=rail.querySelector('.book');return b?b.offsetWidth+30:rail.clientWidth*.7;};
+  function update(){
+    const max=rail.scrollWidth-rail.clientWidth,x=rail.scrollLeft;
+    const atStart=x<=4,atEnd=x>=max-4,overflow=max>4;
+    wrap.classList.toggle('can-prev',overflow&&!atStart);
+    wrap.classList.toggle('can-next',overflow&&!atEnd);
+    prev.hidden=!overflow||atStart;
+    next.hidden=!overflow||atEnd;
+  }
+  prev.addEventListener('click',()=>{wrap.classList.add('touched');rail.scrollBy({left:-step(),behavior:'smooth'});});
+  next.addEventListener('click',()=>{wrap.classList.add('touched');rail.scrollBy({left:step(),behavior:'smooth'});});
+  rail.addEventListener('scroll',()=>{wrap.classList.add('touched');update();},{passive:true});
+  addEventListener('resize',update,{passive:true});
+  addEventListener('load',update);update();
+})();
 
 // video lazy embed
 document.querySelectorAll('.vcard[data-src]').forEach(c=>{
