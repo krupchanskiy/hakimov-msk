@@ -241,6 +241,7 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.02;letter-spa
 .org-chip:hover{transform:translateY(-2px);border-color:var(--terra);color:var(--terra)}
 .org-chip--wa:hover{border-color:#1DA851;color:#1DA851}
 .org-chip--tg:hover{border-color:#229ED9;color:#229ED9}
+.org-chip--vk:hover{border-color:#0077FF;color:#0077FF}
 
 /* ===== FINAL CTA ===== */
 .final{position:relative;text-align:center;overflow:hidden;background:radial-gradient(120% 95% at 50% 0%,rgba(207,150,43,.14),transparent 52%),var(--ink)}
